@@ -1,0 +1,144 @@
+/* ── Dashboard Page ── */
+.dash-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dash-welcome {
+  text-align: center;
+  padding: 40px 32px;
+  margin-bottom: 32px;
+}
+
+.dash-welcome-icon {
+  color: var(--accent-blue);
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 12px var(--accent-blue-glow));
+}
+
+.dash-welcome h2 {
+  margin-bottom: 8px;
+}
+
+.dash-welcome p {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+}
+
+/* ── Tool Cards ── */
+.dash-tools-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.dash-tool-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.dash-tool-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dash-icon-emerald {
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--accent-emerald);
+}
+
+.dash-icon-amber {
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--accent-amber);
+}
+
+.dash-icon-rose {
+  background: rgba(244, 63, 94, 0.12);
+  color: var(--accent-rose);
+}
+
+.dash-tool-info {
+  flex: 1;
+}
+
+.dash-tool-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.dash-tool-info p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.dash-tool-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dash-arrow {
+  color: var(--accent-blue);
+  transition: transform var(--transition-fast);
+}
+
+.dash-tool-card:hover .dash-arrow {
+  transform: translateX(4px);
+}
+
+/* ── Agents Section ── */
+.dash-agents-section {
+  margin-bottom: 32px;
+}
+
+.dash-agents-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+}
+
+.dash-agents-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.dash-agent {
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.dash-agent-badge {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.dash-agent h4 {
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
+.dash-agent p {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .dash-agents-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
